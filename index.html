@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nadia Syed Ehsan Shah — Chemical Engineer</title>
+<meta name="description" content="Portfolio of Nadia Syed Ehsan Shah, Chemical Engineering graduate from Abu Dhabi University." />
+<style>
+  :root{
+    --navy:#1f3864; --accent:#2e75b6; --light:#eaf1f8;
+    --ink:#1c2733; --grey:#5b6776; --bg:#f6f8fb; --white:#ffffff;
+    --radius:16px; --maxw:980px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+  /* Nav */
+  nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid #e3e9f0}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  nav .brand{font-weight:700;color:var(--navy);letter-spacing:.5px}
+  nav .links a{color:var(--grey);margin-left:22px;font-size:.95rem;font-weight:500}
+  nav .links a:hover{color:var(--navy);text-decoration:none}
+  @media(max-width:560px){nav .links a{margin-left:14px;font-size:.85rem}}
+
+  /* Hero */
+  header.hero{background:linear-gradient(135deg,var(--navy),var(--accent));color:#fff;padding:80px 0 70px;text-align:center}
+  .avatar{width:118px;height:118px;border-radius:50%;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:2.6rem;font-weight:700;margin:0 auto 22px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+  header.hero h1{font-size:2.5rem;letter-spacing:.5px}
+  header.hero .tag{font-size:1.15rem;opacity:.95;margin-top:8px;font-weight:500}
+  header.hero .loc{margin-top:12px;opacity:.85;font-size:.95rem}
+  .cta{margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{padding:11px 22px;border-radius:30px;font-weight:600;font-size:.95rem;display:inline-block}
+  .btn.primary{background:#fff;color:var(--navy)}
+  .btn.ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.6)}
+  .btn:hover{transform:translateY(-2px);text-decoration:none}
+  .btn{transition:transform .15s ease}
+
+  /* Sections */
+  section{padding:58px 0}
+  section h2{color:var(--navy);font-size:1.6rem;margin-bottom:6px}
+  section h2 + .sub{color:var(--grey);margin-bottom:28px;font-size:.98rem}
+  .card{background:var(--white);border:1px solid #e6ecf3;border-radius:var(--radius);padding:26px;box-shadow:0 4px 18px rgba(31,56,100,.05)}
+  .grid{display:grid;gap:18px}
+  .grid.two{grid-template-columns:repeat(2,1fr)}
+  .grid.three{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:720px){.grid.two,.grid.three{grid-template-columns:1fr}}
+
+  .lead{font-size:1.05rem;color:#33404f}
+  .eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:.78rem}
+
+  .edu-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px}
+  .edu-top h3{color:var(--navy);font-size:1.2rem}
+  .edu-top .date{color:var(--grey);font-size:.92rem}
+  .gpa{display:inline-block;margin-top:10px;background:var(--light);color:var(--navy);font-weight:700;padding:6px 14px;border-radius:20px;font-size:.9rem}
+
+  ul.clean{list-style:none}
+  ul.clean li{position:relative;padding-left:22px;margin-bottom:10px;color:#33404f}
+  ul.clean li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--light);color:var(--navy);padding:7px 15px;border-radius:20px;font-size:.88rem;font-weight:500}
+
+  .lang{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid #eef2f7}
+  .lang:last-child{border-bottom:none}
+  .lang .name{font-weight:600;color:var(--navy)}
+  .lang .level{color:var(--grey);font-size:.88rem}
+
+  .contact-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+  .contact-row a{background:var(--light);padding:10px 16px;border-radius:12px;color:var(--navy);font-weight:500}
+  .contact-row a:hover{background:#dde8f4;text-decoration:none}
+
+  footer{text-align:center;padding:34px 0;color:var(--grey);font-size:.88rem;border-top:1px solid #e3e9f0;background:#fff}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="brand">NSES</span>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#languages">Languages</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="avatar">NS</div>
+    <h1>Nadia Syed Ehsan Shah</h1>
+    <div class="tag">Chemical Engineering Graduate · Abu Dhabi University</div>
+    <div class="loc">📍 Abu Dhabi, United Arab Emirates</div>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="Nadia_Syed_Ehsan_Shah_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow">Profile</span>
+    <h2>About me</h2>
+    <div class="card">
+      <p class="lead">I am a Chemical Engineering graduate from Abu Dhabi University (GPA 3.3) seeking
+      challenging responsibilities within a respected organization, where I can apply my technical
+      foundation, strong communication skills and creative problem-solving to support the company’s
+      growth and development. I am dependable and organized, and I work well both independently and
+      as part of a team. As a multilingual speaker, I enjoy connecting with people from diverse backgrounds.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education" style="background:#fff;border-top:1px solid #e3e9f0;border-bottom:1px solid #e3e9f0">
+  <div class="wrap">
+    <span class="eyebrow">Education</span>
+    <h2>Academic background</h2>
+    <div class="card">
+      <div class="edu-top">
+        <h3>Bachelor of Science in Chemical Engineering</h3>
+        <span class="date">Graduated 29 July 2019</span>
+      </div>
+      <p style="color:var(--grey);margin-top:4px">Abu Dhabi University (ADU) — Abu Dhabi, UAE</p>
+      <span class="gpa">GPA 3.3 / 4.0</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">Experience</span>
+    <h2>Leadership & activities</h2>
+    <div class="card">
+      <ul class="clean">
+        <li>Hosted university events including the <strong>Club Fair</strong> and <strong>Global Day</strong>, engaging large and diverse audiences.</li>
+        <li>Supported the <strong>Abu Dhabi University Student Council</strong> in organizing campus-wide events such as <strong>UAE National Day</strong> and <strong>Pink Day</strong>, from planning through to execution.</li>
+        <li>Built strong public speaking, coordination and teamwork skills through hands-on event experience.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:#fff;border-top:1px solid #e3e9f0;border-bottom:1px solid #e3e9f0">
+  <div class="wrap">
+    <span class="eyebrow">Skills</span>
+    <h2>What I bring</h2>
+    <div class="grid three">
+      <div class="card">
+        <h3 style="color:var(--navy);margin-bottom:12px;font-size:1.1rem">Communication & Admin</h3>
+        <ul class="clean">
+          <li>Correspondence & report writing</li>
+          <li>Document preparation</li>
+          <li>Receptive to feedback</li>
+          <li>Management principles</li>
+          <li>Quality monitoring</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--navy);margin-bottom:12px;font-size:1.1rem">Computer</h3>
+        <div class="chips">
+          <span class="chip">Word</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Access</span>
+          <span class="chip">PowerPoint</span>
+          <span class="chip">Outlook</span>
+        </div>
+        <p style="color:var(--grey);margin-top:14px;font-size:.9rem">Typing: English 50 wpm · Arabic 40 wpm</p>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--navy);margin-bottom:12px;font-size:1.1rem">Personal Strengths</h3>
+        <div class="chips">
+          <span class="chip">Team player</span>
+          <span class="chip">Cooperative</span>
+          <span class="chip">Responsible</span>
+          <span class="chip">Dependable</span>
+          <span class="chip">Hard-working</span>
+          <span class="chip">Punctual</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="wrap">
+    <span class="eyebrow">Languages</span>
+    <h2>Multilingual</h2>
+    <div class="card" style="max-width:560px">
+      <div class="lang"><span class="name">Balochi</span><span class="level">Mother tongue</span></div>
+      <div class="lang"><span class="name">Arabic</span><span class="level">Native / bilingual</span></div>
+      <div class="lang"><span class="name">English</span><span class="level">Professional working</span></div>
+      <div class="lang"><span class="name">Hindi</span><span class="level">Professional working</span></div>
+      <div class="lang"><span class="name">Urdu</span><span class="level">Professional working</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#fff;border-top:1px solid #e3e9f0">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Let’s connect</h2>
+    <p class="sub">I’m open to opportunities in chemical/process engineering, quality, operations and administration.</p>
+    <div class="contact-row">
+      <a href="mailto:Nadia_salem999@hotmail.com">✉️ Nadia_salem999@hotmail.com</a>
+      <a href="tel:+971508855977">📞 +971 50 885 5977</a>
+      <a href="Nadia_Syed_Ehsan_Shah_CV.pdf" target="_blank" rel="noopener">📄 Download CV (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="yr"></span> Nadia Syed Ehsan Shah · Abu Dhabi, UAE
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
